@@ -24,7 +24,7 @@ function setup() {
 function draw() {
   background(0, 1);
   
-  if(frameCount%10==0){
+  // if(frameCount%10==0){
   for(let i=0; i < dance.length; i++){
    
     dance[i].update();
@@ -32,7 +32,7 @@ function draw() {
     dance[i].edges();
     // dance[i].colorCorrect();
     }
-  }
+  // }
     
 
   
@@ -68,7 +68,7 @@ function draw() {
   
   // }
   
-if(frameCount%100==0){
+if(frameCount%50==0){
   fill(random(360), 100, 100)
   rectMode(CENTER);
   rect(width/2, height/2, random(width/2, width), random(height/2, height));
